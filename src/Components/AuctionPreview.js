@@ -12,7 +12,7 @@ export default class AuctionPreview extends Component {
       showEditor,
       setMode,
     } = this.context
-    const hover = editMode ? 'hover:bg-gray-500 hover:bg-opacity-40 cursor cursor-pointer' : ``
+    const hover = editMode ? 'hover:bg-gray-500 hover:bg-opacity-40  cursor-pointer' : ``
     const categoryPattern = choosePattern(state.background.pattern, state.background.patternColor)
     const status = Object.entries(state)
     return (
@@ -27,7 +27,7 @@ export default class AuctionPreview extends Component {
             showEditor('background')
           }
         }}
-        className='h-full w-full bg-red-500 py-3 pb-10 2xl:pb-5 2xl:min-h-screen relative z-0'>
+        className='h-full w-full py-3 pb-10 2xl:pb-5 2xl:min-h-screen relative z-0 '>
         <div
           style={{ ...categoryPattern }}
           className={`absolute top-0 left-0 h-full w-full z-0`}></div>

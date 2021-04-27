@@ -56,10 +56,10 @@ export default class MainSectionEditor extends Component {
               changeSectionProp('mainSection', 'borderWidth', event.target.value)
             }}
             defaultValue={state.mainSection.borderWidth}
-            step='2'
+            step='3'
             type='range'
             min='0'
-            max='8'
+            max='9'
           />
         </div>
       </div>

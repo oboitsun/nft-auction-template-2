@@ -23,15 +23,14 @@ export default class MainSection extends Component {
         onClick={() => {
           showEditor('mainSection')
         }}
-        className={` w-full h-full  flex justify-center rounded-3xl relative z-30`}>
+        className={` w-full h-full  flex justify-center rounded-2xl relative z-30 overflow-hidden`}>
         {editMode && (
-          <div
-            className={`edit absolute top-0 left-0  w-full h-full ${hover} rounded-2xl z-30`}></div>
+          <div className={`edit absolute top-0 left-0  w-full h-full ${hover}  z-30`}></div>
         )}
 
         <div
           style={{ ...headerPattern }}
-          className={`absolute top-0 left-0 h-full w-full  rounded-3xl z-0`}></div>
+          className={`absolute top-0 left-0 h-full w-full  z-0`}></div>
         <div className='w-1/12'></div>
         <section className='vertical-ratio w-1/12  flex z-10 relative '>
           <iframe
