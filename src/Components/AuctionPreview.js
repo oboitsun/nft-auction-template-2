@@ -18,7 +18,7 @@ export default class AuctionPreview extends Component {
     return (
       <div
         style={{
-          backgroundColor: state.button.bckColor,
+          backgroundColor: state.background.bckColor,
           // border: `${state.button.borderWidth}px solid ${state.button.borderColor}`,
         }}
         onClick={(event) => {
